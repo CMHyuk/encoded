@@ -16,3 +16,6 @@ spring:
 server:
   error:
     include-message: always
+
+jwt:
+  jwt-key: "5Fr8DCJ+4PnJ9uoUFc/SPPYwKSJCAsZxtr2uU3Ky4JU="
