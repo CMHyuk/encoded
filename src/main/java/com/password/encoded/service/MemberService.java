@@ -1,21 +1,19 @@
 package com.password.encoded.service;
 
 import com.password.encoded.config.AppConfig;
-import com.password.encoded.dto.JwtResponse;
-import com.password.encoded.entity.Member;
-import com.password.encoded.repository.MemberRepository;
 import com.password.encoded.crypto.PasswordEncoder;
+import com.password.encoded.dto.JwtResponse;
 import com.password.encoded.dto.LoginRequest;
 import com.password.encoded.dto.SingUp;
+import com.password.encoded.entity.Member;
+import com.password.encoded.repository.MemberRepository;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.crypto.SecretKey;
-import java.util.Base64;
 import java.util.Date;
 
 @Service
